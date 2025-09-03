@@ -39,4 +39,3 @@ public class LT1_RandomMedian {
         System.out.println("\nTheodore Kyle Choa   |   2ITB"); 
     }
 }
-// This is a comment
