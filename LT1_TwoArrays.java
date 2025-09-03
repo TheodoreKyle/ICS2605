@@ -24,5 +24,6 @@ public class LT1_TwoArrays {
             System.out.println("Insertion Sort: " + C[0] + "  " + C[1] + "  " +  C[2] + "  " + C[3] + "  " + C[4] + "  " + C[5] + "  " + C[6] + "  " + C[7] + "  " + C[8]); 
         }
         System.out.println("\nTheodore Kyle Choa   |   2ITB");  
+        System.out.println("你好"); 
     }
 }
