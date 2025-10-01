@@ -7,6 +7,7 @@ public class Choa_Queue {
         queue.add("Alice");
         queue.add("Bob");
         queue.add("Charlie"); 
+        queue.add("Adam"); 
         
         // [Alice, Bob, Charlie]
         System.out.println("Queue: " + queue);

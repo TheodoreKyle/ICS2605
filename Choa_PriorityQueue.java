@@ -13,5 +13,7 @@ public class Choa_PriorityQueue {
         while (!pq.isEmpty()) {
             System.out.println(pq.poll()); // 10, 30, 50
         }
+        System.err.println();
     }
+    
 }

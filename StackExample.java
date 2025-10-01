@@ -22,7 +22,20 @@ public class StackExample {
 
         // Check if empty
         System.out.println("Is stack empty? " + s.isEmpty());
+        System.out.println("\n-----------------------------------------\n");
 
+        Stack<String> stack2 = new Stack<>();
+        stack2.push("Apple");
+        stack2.push("Caterpillar");
+        stack2.push("Ball");
+        stack2.push("Delta");
+        System.out.println("String Stack: " + stack2);
+        System.out.println("Index of Apple: " + stack2.indexOf("Apple")); 
+        System.out.println("Position of Apple: " + stack2.search("Apple"));
+        System.out.println("Position of Caterpillar: " + stack2.search("Caterpillar"));
+        stack2.pop();
+        stack2.pop();
+        System.out.println("Stack after Popping Twice: " + stack2);
         
     }
 }
