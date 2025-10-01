@@ -6,9 +6,9 @@ public class LT1_BubbleSort {
             int comparison = 0;  
             for (int b = array.length - 1; b > a; b--) { 
                 if (array[b] < array[b - 1]) {
-                    array[b] = array[b] + array[b - 1];
-                    array[b - 1] = array[b] - array[b - 1];
-                    array[b] = array[b] - array[b - 1];
+                    int temp = array[b - 1];
+                    array[b - 1] = array[b];
+                    array[b] = temp; 
                     comparison++;
                 } 
             }
