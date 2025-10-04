@@ -15,5 +15,4 @@ public class Choa_PriorityQueue {
         }
         System.err.println();
     }
-    
 }
