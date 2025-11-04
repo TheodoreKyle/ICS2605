@@ -1,18 +1,18 @@
-class Node {
+class Node2 {
     int value;
-    Node left, right;
+    Node2 left, right;
 
-    public Node(int value) {
+    public Node2(int value) {
         this.value = value;
     }
 }
 
 class BinarySearchTreeRecursive {
-    Node root;
+    Node2 root;
 
     // 🔹 Iterative Insert (non-recursive)
     void insert(int value) {
-        Node newNode = new Node(value);
+        Node2 newNode = new Node2(value);
 
         // If tree is empty, set root
         if (root == null) {
@@ -20,8 +20,8 @@ class BinarySearchTreeRecursive {
             return;
         }
 
-        Node current = root;
-        Node parent = null;
+        Node2 current = root;
+        Node2 parent = null;
 
         while (current != null) {
             parent = current;
@@ -43,12 +43,12 @@ class BinarySearchTreeRecursive {
         }
     }
 
-    // 🔹 Visual print (same as before)
+    // 🔹 Visual print
     void printTree() {
         printRecursive(root, "", true);
     }
 
-    private void printRecursive(Node node, String prefix, boolean isTail) {
+    private void printRecursive(Node2 node, String prefix, boolean isTail) {
         if (node == null) return;
 
         System.out.println(prefix + (isTail ? "└── " : "├── ") + node.value);
@@ -60,9 +60,9 @@ class BinarySearchTreeRecursive {
         }
     }
 
-    // Optional: simple search (iterative)
+    // 🔹 Simple search (iterative)
     boolean search(int value) {
-        Node current = root;
+        Node2 current = root;
         while (current != null) {
             if (current.value == value)
                 return true;
@@ -70,6 +70,7 @@ class BinarySearchTreeRecursive {
         }
         return false;
     }
+
     public static void main(String[] args) {
         BinarySearchTreeRecursive bst = new BinarySearchTreeRecursive();
 
@@ -80,9 +81,11 @@ class BinarySearchTreeRecursive {
         bst.insert(40);
         bst.insert(60);
         bst.insert(80);
+
         System.out.println("Tree diagram:");
         bst.printTree();
 
         System.out.println("Search 40 → " + bst.search(40));
         System.out.println("Search 90 → " + bst.search(90));
-    }  }
+    }
+}
