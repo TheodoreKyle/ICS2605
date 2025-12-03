@@ -1,3 +1,8 @@
+/* 
+Choa, Theodore Kyle Q.
+2ITB   |   ICS 2605
+*/
+
 import java.util.LinkedList;
 public class Graph2 {
     private LinkedList<String>[] adjList;
