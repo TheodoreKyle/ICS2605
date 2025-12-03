@@ -3,6 +3,7 @@ public class Graph {
     private LinkedList<String>[] adjList;
     private int size;
 
+    @SuppressWarnings("unchecked")
     public Graph(int size) {
         this.size = size;
         adjList = new LinkedList[size];
